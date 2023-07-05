@@ -1,3 +1,9 @@
+link live : https://piotrliszka1.github.io/MyPage/page/technologies
+
+Opis : aplikacja o mnie posiada slider z ng bootstrap   na temat technologii, zrealizowałem plan jaki chciałem tzn. na głownej stronie podstrony bez zmiany widoku z wykorzystaniem child component w Route Components, wyświetlenie tylu aplikacji ile posiada obiekt bez tworzenial długiego widoku w html.
+
+
+
 # MyPage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
