@@ -1,0 +1,14 @@
+<ngb-carousel
+  [interval]="1500"
+  *ngIf="images"
+  [showNavigationArrows]="false"
+  [showNavigationIndicators]="false"
+  [pauseOnHover]="false"
+  [pauseOnFocus]="false"
+>
+  <ng-template *ngFor="let img of images" ngbSlide>
+    <div class="box-img">
+      <img [src]="img" alt="Random first slide" />
+    </div>
+  </ng-template>
+</ngb-carousel>

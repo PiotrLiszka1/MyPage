@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use "../src/app/variables.scss" as c;
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: c.$mcolor;
+  padding: 0 2%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1920px;
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding: 0 10%;
+  }
+}

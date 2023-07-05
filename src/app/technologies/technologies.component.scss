@@ -1,0 +1,16 @@
+img {
+  width: 160px;
+}
+
+.box-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media (min-width: 900px) {
+  img {
+    width: 200px;
+  }
+}

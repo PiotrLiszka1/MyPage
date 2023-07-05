@@ -1,0 +1,10 @@
+<div class="box">
+  <ul class="box__list">
+    <li class="box__list-item" *ngFor="let app of myApp">
+      <a class="box__list-item-link" [href]="app.appHref" target="_blank">
+        <img class="box__list-item-img" [src]="app.appImg" [alt]="app.appAlt" />
+        <p class="box__list-item-text">{{ app.appName }}</p>
+      </a>
+    </li>
+  </ul>
+</div>

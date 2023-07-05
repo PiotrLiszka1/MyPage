@@ -1,0 +1,58 @@
+@use "../variables.scss" as c;
+
+.contact {
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+    &-item {
+      background-color: c.$itemBGcolor;
+      padding: 20px;
+      display: flex;
+      width: 80%;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.5s;
+      margin: 10px 5px;
+
+      &-text {
+        margin: 0;
+      }
+
+      &-link {
+        margin-left: 5px;
+        text-decoration: none;
+      }
+
+      &-link,
+      &-text {
+        color: c.$mcolor;
+        transition: color 0.5s;
+      }
+    }
+    &-item:hover {
+      background-color: c.$hoverColor;
+    }
+
+    &-item:hover > &-item-link {
+      color: white;
+    }
+    &-item:hover > &-item-text {
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .contact {
+    &__box {
+      &-item {
+        width: auto;
+      }
+    }
+  }
+}

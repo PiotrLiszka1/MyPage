@@ -1,0 +1,33 @@
+<nav class="nav">
+  <a
+    (click)="show()"
+    class="nav__link"
+    routerLink="/page/technologies"
+    routerLinkActive="active"
+    >technologie
+  </a>
+  <a
+    (click)="show()"
+    class="nav__link"
+    routerLinkActive="active"
+    routerLink="/page/projects"
+    >projekty
+  </a>
+  <a
+    (click)="show()"
+    class="nav__link"
+    routerLinkActive="active"
+    routerLink="/page/experience"
+    >doświadczenie
+  </a>
+  <a
+    (click)="show()"
+    class="nav__link"
+    routerLinkActive="active"
+    routerLink="/page/contact"
+    >kontakt
+  </a>
+  <a (click)="hide()" *ngIf="showIcon" class="nav__link" routerLink="/page">
+    <mat-icon>first_page</mat-icon>
+  </a>
+</nav>

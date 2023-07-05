@@ -1,0 +1,57 @@
+@use "../variables.scss" as c;
+
+.my-container {
+  box-shadow: 0 0 5px white;
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin: 20px;
+
+  .heading-h1 {
+    color: white;
+  }
+
+  .about-me {
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .github-link {
+      position: relative;
+      text-decoration: none;
+      margin: 20px 0 10px 0;
+      color: c.$itemBGcolor;
+      letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      img {
+        width: 33px;
+      }
+    }
+
+    .github-link::before {
+      content: "";
+      position: absolute;
+      width: 78%;
+      height: 2px;
+      border-radius: 4px;
+      background-color: c.$itemBGcolor;
+      bottom: 0;
+      right: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .github-link:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  }
+}

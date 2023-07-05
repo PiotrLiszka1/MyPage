@@ -1,0 +1,38 @@
+@use "../variables.scss" as c;
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: c.$itemBGcolor;
+
+    &__title {
+      margin: 0;
+    }
+
+    &__position {
+      margin-bottom: 10px;
+    }
+    span {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    &__date {
+      max-width: 190px;
+      position: relative;
+      &-text::before {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgb(61, 59, 59);
+      }
+    }
+  }
+}
