@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./technologies.component.scss'],
 })
 export class TechnologiesComponent {
-  public ngImg: string = '../../assets/angular.svg';
-  public htmlIcon: string = '../../assets/html-icon.svg';
-  public jsIcon: string = '../../assets/js-icon.svg';
-  public scssIcon: string = '../../assets/scss-icon.svg';
-  public cssIcon: string = '../../assets/css-icon.svg';
-  public typeScriptIcon: string = '../../assets/typescript.svg';
+  public ngImg: string = './assets/angular.svg';
+  public htmlIcon: string = './assets/html-icon.svg';
+  public jsIcon: string = './assets/js-icon.svg';
+  public scssIcon: string = './assets/scss-icon.svg';
+  public cssIcon: string = './assets/css-icon.svg';
+  public typeScriptIcon: string = './assets/typescript.svg';
 
   public images = [
     this.htmlIcon,
