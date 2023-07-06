@@ -1,3 +1,9 @@
+link live : https://piotrliszka1.github.io/MyPage/page/technologies
+
+Opis : aplikacja o mnie napisana w angular, posiada slider z ng bootstrap, liste projektow i zakładkę kontakt.
+
+
+
 # MyPage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
