@@ -12,8 +12,9 @@
       background-color: c.$itemBGcolor;
       padding: 20px;
       display: flex;
-      width: 80%;
+      width: 100%;
       border-radius: 10px;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       transition: background-color 0.5s;
@@ -47,6 +48,15 @@
   }
 }
 
+@media (min-width: 768px) {
+  .contact {
+    &__box {
+      &-item {
+        width: 60%;
+      }
+    }
+  }
+}
 @media (min-width: 900px) {
   .contact {
     &__box {
